@@ -1,10 +1,16 @@
 <template>
-  <div>
-    我是根组件
+  <div class="app">
     <router-view></router-view>
   </div>
 </template>
 
 <style lang="less">
-
+  *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  html,body,.app{
+    height: 100%;
+  }
 </style>
