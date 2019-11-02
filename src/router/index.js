@@ -24,7 +24,6 @@ const router = new VueRouter({
 
 // 导航守卫，使用token来判断
 router.beforeEach((to, from, next) => {
-  console.log(to, from)
   const token = localStorage.getItem('token')
   if (to.path === '/login' || token) {
     next()
