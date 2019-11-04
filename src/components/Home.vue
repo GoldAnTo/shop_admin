@@ -110,12 +110,19 @@
         </div>
         <!-- 表单 -->
         <el-table :data="tableData" style="width: 100%">
-          <el-table-column prop="name" label="姓名" ></el-table-column>
-          <el-table-column prop="email" label="邮箱" ></el-table-column>
+          <el-table-column prop="name" label="姓名"></el-table-column>
+          <el-table-column prop="email" label="邮箱"></el-table-column>
           <el-table-column prop="phone" label="电话"></el-table-column>
           <el-table-column prop="done" label="状态"></el-table-column>
           <el-table-column prop="caozuo" label="操作"></el-table-column>
         </el-table>
+        <!-- 分页 -->
+        <div class="block">
+          <el-pagination
+            layout="total, sizes, prev, pager, next, jumper"
+            :total="400"
+          ></el-pagination>
+        </div>
       </el-main>
     </el-container>
   </el-container>
